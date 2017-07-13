@@ -3,13 +3,13 @@
 
 ## Introduction
 **IMTD17** consists of 3 parts:
-* S1: Training set of 50,000 unlabelled samples
-* S2: Training set of 1,000 labelled samples
-* T : Test set of 10,000 labelled samples
+* Part 1: Training set of 50,000 unlabelled samples
+* Part 2: Training set of 1,000 labelled samples
+* Part 3: Test set of 10,000 labelled samples
 
 The components of each part are as follows:
 
-| Dataset    | S1     | S2     | T      |
+| Dataset    | Part 1 | Part 2 | Part 3 |
 | :--------- | :----: | :----: | :----: |
 | Labeled    | No     | Yes    | Yes    |
 | Background | 45,000 | 0      | 9,000  |
