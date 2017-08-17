@@ -183,6 +183,8 @@ def read_data_sets(train_dir,
     if one_hot:
         test_labels = test_labels[:,:num_classes]
     
+    if dtype == None:
+        dtype = dtypes.uint8
     s1train = DataSet(s1train_images, None, dtype=dtype, reshape=reshape)
     s2train = DataSet(s2train_images, s2train_labels, dtype=dtype, reshape=reshape)
     test = DataSet(test_images, test_labels, dtype=dtype, reshape=reshape)
