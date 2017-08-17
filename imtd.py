@@ -180,7 +180,8 @@ def read_data_sets(train_dir,
     test_images = util.extract_images(TEST_IMAGES)
     assert s1train_images.shape[1:3] == test_images.shape[1:3]
     test_labels = util.extract_labels(TEST_LABELS, one_hot=one_hot, num_classes=num_classes+1)
-    test_labels = test_labels[:,:num_classes]
+    if one_hot:
+        test_labels = test_labels[:,:num_classes]
     
     s1train = DataSet(s1train_images, None, dtype=dtype, reshape=reshape)
     s2train = DataSet(s2train_images, s2train_labels, dtype=dtype, reshape=reshape)
