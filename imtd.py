@@ -24,7 +24,7 @@ class Utility(object):
         return numpy.frombuffer(stream.read(4), dtype=dt)[0]
     
     def _read_check_file(self, file_name):
-        file_path = self.train_dir + '\\' + file_name
+        file_path = self.train_dir + '/' + file_name
         if not os.path.exists(file_path):
             raise FileExistsError('File not exist')
         return file_path
