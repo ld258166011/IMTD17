@@ -44,3 +44,5 @@ The mobile traffic is generated from 12 different mobile applications:
 | IMTD17\\test-images-idx3-ubyte.gz    | Labelled test set images       | 1,230,388    |
 | IMTD17\\test-labels-idx1-ubyte.gz    | Labelled test set labels       | 1,489        |
 | imtd.py                              | **IMTD17** helper functions    |              |
+
+***Note:*** `.py` files are written for Python 3.x.
